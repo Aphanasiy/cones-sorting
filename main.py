@@ -78,7 +78,10 @@ def move():
         return ""
     except KeyboardInterrupt:
         return ""
-    a, b = map(lambda x: int(x) - 1, movecmd.split())
+    try:
+        a, b = map(lambda x: int(x) - 1, movecmd.split())
+    except:
+        return "Error. Wrong input"
     if a == b:
         return "Error. Can't move to the same spot"
 
