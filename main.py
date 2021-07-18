@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 from colors import Empty, Unit, get_colors
 
